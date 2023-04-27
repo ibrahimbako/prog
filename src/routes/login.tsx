@@ -1,3 +1,4 @@
+import { Box, Button, Text } from "@chakra-ui/react"
 import { Outlet, useLoaderData } from "react-router-dom"
 
 export const loader = async ({}) => {
@@ -13,13 +14,13 @@ export const component = () => {
 
   return (
     <>
-      <div>
-        <div className="w-full h-12 bg-red-500">{data}</div>
-        <div className="flex">
-          <div className="w-20 h-[100vh] bg-blue-500"></div>
+      <Box>
+        <Box width="100vw" height="12" bgColor="red.500"></Box>
+        <Box className="flex">
+          <Box height="100vh" width="12" bgColor="blue.500"></Box>
           <Outlet />
-        </div>
-      </div>
+        </Box>
+      </Box>
     </>
   )
 }

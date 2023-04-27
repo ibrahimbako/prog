@@ -1,3 +1,3 @@
 import { Directus } from "@directus/sdk"
 
-export const directus = new Directus("http://0.0.0.0:8055", {})
+export const directus = new Directus("http://192.168.1.84:8055", {})

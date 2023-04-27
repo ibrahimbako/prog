@@ -13,12 +13,11 @@ export const action = async ({}) => {
 }
 
 export const component = () => {
-  const workforces = useLoaderData()
+  const workforces: {}[] = useLoaderData() as any
 
   return (
     <>
       <div>
-        {/* @ts-ignore */}
         {workforces.map((el, index) => (
           <div key={index}>
             {/* <p>
